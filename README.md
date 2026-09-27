@@ -4,7 +4,7 @@
 
 <p align="center" dir="rtl" lang="ar">من تسجيلات الجلسات إلى مقاطع قصيرة ثنائية اللغة</p>
 
-> **This is a showcase, not the code.** The source is private because the system handles real operations for real people. Nothing here is needed to run it, and nothing here reveals how it is secured. A live walkthrough is available on request.
+> **This is a showcase, not the code.** The source is private because it runs on my own accounts and data. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
 
 ## The problem
 
@@ -35,6 +35,8 @@ flowchart LR
   M --> C
 ```
 
+<sub>Screens are not shown because the operator dashboard lists unpublished client material.</sub>
+
 ## Built with
 
 Python · ffmpeg · local speech-to-text · image compositing · a social scheduling service · runs locally, not as a hosted service
@@ -54,7 +56,7 @@ Python · ffmpeg · local speech-to-text · image compositing · a social schedu
 
 - [Impact Anchor — consulting site](https://github.com/Mohanad1st/impact-anchor-site-showcase) — From AI overwhelm to a working adoption plan, for mission-driven teams
 - [AI Governance Roadmap](https://github.com/Mohanad1st/ai-governance-roadmap-showcase) — A free, bilingual course that takes you from first definitions to a governance plan
-- [Anchor Learning Hub](https://github.com/Mohanad1st/anchor-learning-hub-showcase) — Interactive learning your teams actually finish — white-label, bilingual, offline-ready
+- [Anchor Learning Hub](https://github.com/Mohanad1st/anchor-learning-hub-showcase) — Interactive, bilingual, offline-ready learning for workshops and training programmes
 - [Network Intelligence](https://github.com/Mohanad1st/network-intelligence-showcase) — Relationships, opportunities and content in one self-hosted workspace
 
 ---
