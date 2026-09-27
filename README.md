@@ -6,28 +6,26 @@
 
 <p align="center"><b>Status:</b> In weekly use &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a></p>
 
-> Case study only: the source is private because it runs on my own accounts and holds unpublished client material. Walkthrough on request.
+> This is a case study. The source is private because it runs on my own accounts and holds unpublished client material.
 
-## The problem
+## Why I built it
 
-I record a lot of training sessions and talks. Cutting each one into clips, subtitling them in two languages and posting on a schedule across four platforms is slow, and it's easy to lose track of what was actually published versus merely planned. This pipeline does the judging, indexing, scheduling and publishing, so a library of recordings becomes a steady, tracked stream of short posts.
+I record training sessions and talks. Cutting each one into clips, subtitling them in two languages and posting on a schedule to four platforms is slow, and it's easy to lose track of what was actually published and what was only planned. This pipeline judges, indexes, schedules and publishes, so a library of recordings becomes a steady, tracked stream of short posts.
 
 ## What it does
 
-- Scores each candidate clip on usefulness, credibility, relevance, originality and fit, and holds anything below a quality floor
-- Burns in English and Arabic subtitles and makes cover art for each platform
-- Builds a rolling publishing calendar across LinkedIn, Instagram, TikTok and YouTube
-- A pre-flight check that blocks scheduling into a channel that can't actually publish
-- Pulls performance back in, so posting choices can move from general research to measured results
+- Scores each clip on usefulness, credibility, relevance, originality and fit, and holds anything below a quality floor.
+- Burns in English and Arabic subtitles and makes cover art for each platform.
+- Builds a rolling publishing calendar across LinkedIn, Instagram, TikTok and YouTube.
+- A pre-flight check blocks scheduling into a channel that can't actually publish.
+- Pulls performance back in, to check the scores and posting times.
 
-## See it
-
-How the work flows:
+## How it works
 
 ```mermaid
 flowchart TD
   accTitle: How a recording becomes scheduled clips
-  accDescr: A session is transcribed into candidate clips, scored against a rubric, low scores are held back, the rest get bilingual subtitles and covers, pass a pre-flight check, are scheduled, recorded in a ledger, and performance feeds back into scoring.
+  accDescr: A session is transcribed into candidate clips, scored, low scores are held back, the rest get bilingual subtitles and covers, pass a pre-flight check, are scheduled and recorded in a ledger, and performance is measured against the scores.
   A[Recording] --> B[Find clips]
   B --> C{Score}
   C -- low or held --> H[Held back]
@@ -35,31 +33,34 @@ flowchart TD
   D --> E[Pre-flight check]
   E --> F[Scheduled]
   F --> G[(Ledger)]
-  F --> M[Performance]
-  M --> C
+  F --> M[Performance measured]
+  M -.-> C
 ```
 
-<sub>Screens are not shown because the operator dashboard lists unpublished client material.</sub>
+<sub>Screens aren&#x27;t shown because the operator dashboard lists unpublished client material.</sub>
 
-## Built with
+## What it's built on
 
-Python · ffmpeg · local speech-to-text · image compositing · a social scheduling service · runs locally, not as a hosted service
+Python · ffmpeg · local speech-to-text · image compositing · a social scheduling service · runs on my machine, not as a hosted service
 
-## Built responsibly
+## Safeguards
 
-- A person approves the first real post to any platform, and live scheduling needs a typed confirmation
-- A hand-kept publish ledger separates planned from actually published
-- A manual hold always outranks a score
-- A human visual review is required before any screen-recorded material ships
-- Arabic subtitles are AI-drafted and flagged for native-speaker review
+- I approve the first real post to any platform, and live scheduling needs a typed confirmation.
+- A hand-kept publish ledger separates planned from actually published.
+- A manual hold always outranks a score.
+- A human visual review comes before any screen-recorded material ships.
 
-## What it deliberately doesn't do
+## What's not solved yet
 
-- It does not decide what is appropriate to show on screen. That stays a human check.
+- The Arabic subtitles are AI-drafted, and none has been reviewed by a native speaker yet.
+
+## What it doesn't do
+
+- It doesn't decide what's appropriate to show on screen. That stays a human check.
 
 ## More from Impact Anchor
 
-- [Impact Anchor — consulting site](https://github.com/Mohanad1st/impact-anchor-site-showcase) — From AI overwhelm to a working adoption plan, for mission-driven teams
+- [Impact Anchor: consulting site](https://github.com/Mohanad1st/impact-anchor-site-showcase) — From AI overwhelm to a working adoption plan, for mission-driven teams
 - [AI Governance Roadmap](https://github.com/Mohanad1st/ai-governance-roadmap-showcase) — A free course that takes you from first definitions to a working AI governance plan
 - [Anchor Learning Hub](https://github.com/Mohanad1st/anchor-learning-hub-showcase) — Interactive, bilingual, offline-ready learning for workshops and training programmes
 - [Network Intelligence](https://github.com/Mohanad1st/network-intelligence-showcase) — Relationships, opportunities and content in one self-hosted workspace
