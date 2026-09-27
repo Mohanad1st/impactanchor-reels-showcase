@@ -4,7 +4,7 @@
 
 <p align="center" dir="rtl" lang="ar">من تسجيلات الجلسات إلى مقاطع قصيرة ثنائية اللغة</p>
 
-> **This is a showcase, not the code.** The source is private because it runs on my own accounts and data. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
+> **This is a showcase, not the code.** The source is private because it runs on my own accounts and holds unpublished client material. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
 
 ## The problem
 
